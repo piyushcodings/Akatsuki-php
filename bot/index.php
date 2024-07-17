@@ -2,7 +2,7 @@
 
 include('hosting.php');
 
-$botToken = '7127779061:AAFJM45VsEg9l8BfqT-2Vie93oWS0Kk3SsE';
+$botToken = '6389324741:AAE08xp4n7doZfyiDZ0FOA2it-nMIQm2g7Q';
 $botUrl = "$hosting/bot/";
 
 $input = json_decode(file_get_contents('php://input'), 1);
@@ -29,24 +29,12 @@ if(isset($input['message'])){
 $userlink = "<a href='tg://user?id=".$user['id'].">".$user['first_name']."</a>";
 
 $admins = [
-	'1405151206'
+	'5748100919'
 ];
 $isAdmin = in_array($user['id'], $admins);
 
 $sellers = [
-'5435611792',
-'5362176219',
-'6076355362',
-'5162213041',
-'5622648117',
-'5928496674',
-'1649834075',
-'5113072048',
-'5747095773',
-'5494896535',
-'5750586305',
-'1824148738',
-'1297999372'
+
 ];
 $isSeller = in_array($user['id'], $sellers);
 
